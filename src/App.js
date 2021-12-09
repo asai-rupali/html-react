@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/NavBar/Nav';
+import WebArticle from './components/Article/WebArticle';
+import AsideBlog from './components/Aside/AsideBlog';
+import Menu from './components/NavBar/Menu';
+import {BrowserRouter as Router,Switch,Route,NavLink,Link} from "react-router-dom";
+import { useState } from 'react';
 
-function App() {
+
+
+
+function App(props) {
+  // const [isCancel,setIsCancel] = useState(false);
+  // const stopCancelingHandler = () =>{
+  //   setIsCancel(true);
+  // }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Nav />
+        <WebArticle /> 
+        <AsideBlog />
+        {/* {!isCancel && <WebArticle onCancel={stopCancelingHandler} />}
+        {!isCancel && <AsideBlog onCancel={stopCancelingHandler} />} */}
+       
+        
+       
+      </div>
     </div>
   );
 }

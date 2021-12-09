@@ -1,0 +1,63 @@
+.post-header {
+    margin-bottom: 40px;
+}
+h2 {
+    background-color: orange;
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #1098ad;
+}
+h2::after {
+    content: "TOP";
+    background-color: #ffe70e;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.author {
+    font-style: italic;
+    font-size: 25px;
+}
+button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.author-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.author-img{
+    float:left; 
+    margin-bottom:20px; 
+}
+.post-img{
+    width:100%;
+    height:auto;
+}
+p{
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+article{
+    flex: 0 0 825px;
+    margin-bottom: 0;
+}
+ul, ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
