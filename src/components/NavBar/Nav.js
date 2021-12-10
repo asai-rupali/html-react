@@ -5,10 +5,11 @@ import NavItem from './NavItems';
 
 
 const data = [
-    {id: "1",item: "Blog",url:"/Blog"},
-    {id: "2",item: "Challenges",url:"/challenges"},
-    {id: "3",item: "Flexbox",url:"/flexbox"},
-    {id: "4",item: "CSS Grid",url:"/grid"}
+    {id: "1",item: "Home"},
+    {id: "2",item: "Blogs"},
+    {id: "3",item: "Challenges"},
+    {id: "4",item: "Flexbox"},
+    {id: "5",item: "Grid"}
 ];
 
 const Nav = () => {
@@ -16,9 +17,10 @@ const Nav = () => {
         <header className="main-header clearfix">
             <h1>📘 The Code Magazine</h1>   
              
-            {data.map((menus) => (
-                <NavItem id={menus.id} item={menus.item} url={menus.url}/>
-            ))}            
+            {data.map((data) => (
+                <NavItem item={data.item} key={data.item}/>
+            ))}    
+                  
         </header>
     );
 };

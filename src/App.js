@@ -1,29 +1,40 @@
 import './App.css';
 import Nav from './components/NavBar/Nav';
-import WebArticle from './components/Article/WebArticle';
-import AsideBlog from './components/Aside/AsideBlog';
-import Menu from './components/NavBar/Menu';
-import {BrowserRouter as Router,Switch,Route,NavLink,Link} from "react-router-dom";
-import { useState } from 'react';
+import Home from './components/Home';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Blogs from './components/NavPages/Blogs';
+import Challenges from './components/NavPages/Challenges';
+import Flexbox from './components/NavPages/Flexbox';
+import Grid from './components/NavPages/Grid';
 
 
 
+function App() {
 
-function App(props) {
-  // const [isCancel,setIsCancel] = useState(false);
-  // const stopCancelingHandler = () =>{
-  //   setIsCancel(true);
-  // }
   return (
     <div className="App">
       <div className="container">
-        <Nav />
-        <WebArticle /> 
-        <AsideBlog />
-        {/* {!isCancel && <WebArticle onCancel={stopCancelingHandler} />}
-        {!isCancel && <AsideBlog onCancel={stopCancelingHandler} />} */}
-       
-        
+     
+        <Router>
+          <Nav />
+          <Switch>
+              <Route path="/blogs">
+                <Blogs />
+              </Route>
+              <Route path="/challenges">
+                <Challenges />
+              </Route>
+              <Route path="/flexbox">
+                <Flexbox />
+              </Route>
+              <Route path="/grid">
+                <Grid />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+          </Switch>
+        </Router>
        
       </div>
     </div>
