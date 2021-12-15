@@ -1,0 +1,58 @@
+.input {
+  margin: 2rem auto;
+  padding: 4rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  float:left;
+}
+
+.input input {
+  font: inherit;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1.15rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+}
+
+.input input:focus {
+  outline: none;
+  border-color: #4f005f;
+}
+
+.input select{
+  font: inherit;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1.15rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+}
+
+h3{
+  background-color: rgb(182, 182, 223);
+  font: inherit;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1.15rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+input.error {
+  border-color: red;
+}
+.input-feedback {
+  color: red;
+  margin-top: .25rem;
+}
+

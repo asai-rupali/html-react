@@ -9,7 +9,8 @@ const data = [
     {id: "2",item: "Blogs"},
     {id: "3",item: "Challenges"},
     {id: "4",item: "Flexbox"},
-    {id: "5",item: "Grid"}
+    {id: "5",item: "Grid"},
+    {id: "6",item: "Service Details"}
 ];
 
 const Nav = () => {

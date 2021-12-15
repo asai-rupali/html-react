@@ -6,6 +6,7 @@ import Blogs from './components/NavPages/Blogs';
 import Challenges from './components/NavPages/Challenges';
 import Flexbox from './components/NavPages/Flexbox';
 import Grid from './components/NavPages/Grid';
+import ServiceDetails from './components/NavPages/ServiceDetails';
 
 
 
@@ -29,6 +30,9 @@ function App() {
               </Route>
               <Route path="/grid">
                 <Grid />
+              </Route>
+              <Route path="/service details">
+                <ServiceDetails />
               </Route>
               <Route path="/">
                 <Home />
